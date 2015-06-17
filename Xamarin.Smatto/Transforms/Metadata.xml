@@ -1,0 +1,11 @@
+<metadata>
+  <remove-node path="/api/package[@name='com.smaato.soma.video']" />
+  <remove-node path="/api/package[@name='com.smaato.soma.internal']" />
+  <remove-node path="/api/package[@name='com.smaato.soma.internal.requests']" />
+  <remove-node path="/api/package[@name='com.smaato.soma.internal.requests.reports']" />
+  <remove-node path="/api/package[@name='com.smaato.soma.internal.utilities']" />
+
+  <remove-node path="/api/package[@name='com.smaato.soma']/interface[@name='BaseViewInterface']" />
+  <remove-node path="/api/package[@name='com.smaato.soma']/interface[@name='AdDownloaderInterface']" />
+  
+</metadata>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Xamarin.Smaato</id>
+        <version>1.0.0</version>
+        <authors>Yufei Huang</authors>
+        <licenseUrl>https://github.com/yufeih/Xamarin.Smaato/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/yufeih/Xamarin.Smaato</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Xamarin binding for Smaato mobile advertising platform, used by http://talktosomeone.net </description>
+        <tags>Xamarin, Android, Smaato</tags>
+    </metadata>
+</package>
