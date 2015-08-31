@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Xamarin.Smatto.Test" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
-	<uses-sdk android:minSdkVersion="10" />
+	<uses-sdk />
 	<application android:label="Xamarin.Smatto.Test" android:icon="@drawable/Icon"></application>
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -10,6 +10,5 @@
 	<uses-permission android:name="android.permission.WRITE_CALENDAR" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-  
-  <activity android:name="com.smaato.soma.interstitial.InterstitialActivity" ></activity>
+	<activity android:name="com.smaato.soma.interstitial.InterstitialActivity"></activity>
 </manifest>

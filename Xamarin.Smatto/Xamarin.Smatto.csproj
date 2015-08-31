@@ -12,6 +12,8 @@
     <RootNamespace>Xamarin.Smatto</RootNamespace>
     <AssemblyName>Xamarin.Smatto</AssemblyName>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
