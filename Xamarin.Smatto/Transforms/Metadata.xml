@@ -6,6 +6,5 @@
   <remove-node path="/api/package[@name='com.smaato.soma.internal.utilities']" />
 
   <remove-node path="/api/package[@name='com.smaato.soma']/interface[@name='BaseViewInterface']" />
-  <remove-node path="/api/package[@name='com.smaato.soma']/interface[@name='AdDownloaderInterface']" />
-  
+
 </metadata>

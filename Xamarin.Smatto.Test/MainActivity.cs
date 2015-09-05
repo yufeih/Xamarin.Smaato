@@ -34,11 +34,15 @@ namespace Xamarin.Smatto.Test
         private void ShowSmaatoAdIn(ViewGroup adContainer)
         {
             BannerView banner = new BannerView(BaseContext);
-            banner.AdSettings.PublisherId = 0;
-            banner.AdSettings.AdspaceId = 0;
+            banner.AdSettings.PublisherId = 1100002341;
+            banner.AdSettings.AdspaceId = 130006756;
             banner.AsyncLoadNewBanner();
             banner.ScalingEnabled = false;
             banner.LocationUpdateEnabled = true;
+            banner.ReceiveAd += (a, b) => 
+            {
+                System.Diagnostics.Debug.WriteLine("ReceiveAd !!!");
+            };
 
             adContainer.AddView(banner);
         }
