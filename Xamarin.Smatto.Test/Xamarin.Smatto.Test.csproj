@@ -16,7 +16,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -72,9 +72,9 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xamarin.Smatto\Xamarin.Smatto.csproj">
-      <Project>{69dc7bd8-ad05-4fff-b9a8-a3442a880b91}</Project>
-      <Name>Xamarin.Smatto</Name>
+    <ProjectReference Include="..\Xamarin.Smaato\Xamarin.Smaato.csproj">
+      <Project>{f13955c0-4857-43cf-9f49-13aab13f8919}</Project>
+      <Name>Xamarin.Smaato</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

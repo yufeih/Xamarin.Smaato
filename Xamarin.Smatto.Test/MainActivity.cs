@@ -5,12 +5,13 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using com.smaato.soma;
 using Com.Smaato.Soma;
 
 namespace Xamarin.Smatto.Test
 {
     [Activity(Label = "Xamarin.Smatto.Test", MainLauncher = true, Icon = "@drawable/icon")]
-    public class MainActivity : Activity
+    public class MainActivity : Activity, IAdListenerInterface
     {
         int count = 1;
 
@@ -23,28 +24,27 @@ namespace Xamarin.Smatto.Test
 
             // Get our button from the layout resource,
             // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
             var group = FindViewById<ViewGroup>(Resource.Id.ad_container);
-
-            ShowSmaatoAdIn(group);
-
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
+            ShowSmaatoAdIn(group);            
         }
 
         private void ShowSmaatoAdIn(ViewGroup adContainer)
         {
-            BannerView banner = new BannerView(BaseContext);
-            banner.AdSettings.PublisherId = 1100002341;
-            banner.AdSettings.AdspaceId = 130006756;
+            BannerView banner = new BannerView(BaseContext);            
+            banner.AdSettings.PublisherId = 0; // for test ad
+            banner.AdSettings.AdspaceId = 0; // for test ad
+            banner.AdSettings.AdDimension=AdDimension.Mediumrectangle;
             banner.AsyncLoadNewBanner();
             banner.ScalingEnabled = false;
             banner.LocationUpdateEnabled = true;
-            banner.ReceiveAd += (a, b) => 
-            {
-                System.Diagnostics.Debug.WriteLine("ReceiveAd !!!");
-            };
+            banner.AddAdListener(this);            
 
             adContainer.AddView(banner);
+        }
+
+        public void OnReceiveAd(IAdDownloaderInterface p0, IReceivedBannerInterface p1)
+        {
+            System.Diagnostics.Debug.WriteLine("ReceiveAd !!!");
         }
     }
 }

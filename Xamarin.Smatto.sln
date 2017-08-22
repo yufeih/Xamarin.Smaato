@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Smatto", "Xamarin.Smatto\Xamarin.Smatto.csproj", "{69DC7BD8-AD05-4FFF-B9A8-A3442A880B91}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Smatto.Test", "Xamarin.Smatto.Test\Xamarin.Smatto.Test.csproj", "{B838333C-3172-4A5D-A94E-BD1B4137D7E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Smaato", "Xamarin.Smaato\Xamarin.Smaato.csproj", "{F13955C0-4857-43CF-9F49-13AAB13F8919}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{69DC7BD8-AD05-4FFF-B9A8-A3442A880B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69DC7BD8-AD05-4FFF-B9A8-A3442A880B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69DC7BD8-AD05-4FFF-B9A8-A3442A880B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69DC7BD8-AD05-4FFF-B9A8-A3442A880B91}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B838333C-3172-4A5D-A94E-BD1B4137D7E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B838333C-3172-4A5D-A94E-BD1B4137D7E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B838333C-3172-4A5D-A94E-BD1B4137D7E7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{B838333C-3172-4A5D-A94E-BD1B4137D7E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B838333C-3172-4A5D-A94E-BD1B4137D7E7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B838333C-3172-4A5D-A94E-BD1B4137D7E7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F13955C0-4857-43CF-9F49-13AAB13F8919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F13955C0-4857-43CF-9F49-13AAB13F8919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F13955C0-4857-43CF-9F49-13AAB13F8919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F13955C0-4857-43CF-9F49-13AAB13F8919}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
