@@ -61,10 +61,7 @@ namespace Xamarin.Smatto.Test
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int MyButton = 2131034112;
-			
-			// aapt resource value: 0x7f050001
-			public const int ad_container = 2131034113;
+			public const int ad_container = 2131034112;
 			
 			static Id()
 			{

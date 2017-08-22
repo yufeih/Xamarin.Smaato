@@ -1,0 +1,41 @@
+<metadata>
+
+  <attr path="/api/package[@name='com.smaato.soma']" name="managedName">com.smaato.soma</attr>  
+  <!--<attr path="/api/package[@name='com.smaato.soma.nativead']" name="managedName">com.smaato.soma.nativead</attr>-->
+  <attr path="/api/package[@name='com.smaato.soma.nativead']/class[@name='NativeAd']" name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.smaato.soma.exception']" name="managedName">com.smaato.soma.exception</attr>
+  <attr path="/api/package[@name='com.smaato.soma.internal']" name="managedName">com.smaato.soma.Internal</attr>
+  <attr path="/api/package[@name='com.smaato.soma.internal.requests.settings']" name="managedName">com.smaato.soma.Internal.requests.settings</attr>
+
+  <!--Error CS0102: The type
+  `Com.Adtech.Mobilesdk.Publisher.Vast.Player.ErrorEventArgs'
+  already contains a definition for `p0' -->
+  <attr path="/api/package[@name='com.smaato.soma.nativead']/interface[@name='NativeAd.NativeAdListener']/method[@name='onAdResponse' and count(parameter)=1 and parameter[1][@type='com.smaato.soma.internal.nativead.BannerNativeAd']]" name="managedName">NativeAdListenerOnResponseArgs</attr>
+  <attr path="/api/package[@name='com.smaato.soma.nativead']/interface[@name='NativeAd.NativeAdTypeListener']/method[@name='onAdResponse' and count(parameter)=1 and parameter[1][@type='android.view.ViewGroup']]" name="managedName">NativeAdTypeListenerOnResponseArgs</attr>
+  <attr path="/api/package[@name='com.smaato.soma.nativead']/interface[@name='NativeAd.NativeAdListener']/method[@name='onError' and count(parameter)=2 and parameter[1][@type='com.smaato.soma.ErrorCode'] and parameter[2][@type='java.lang.String']]" name="managedName">NativeadListenerErrorEventArgs</attr>
+  <attr path="/api/package[@name='com.smaato.soma.nativead']/interface[@name='NativeAd.NativeAdTypeListener']/method[@name='onError' and count(parameter)=2 and parameter[1][@type='com.smaato.soma.ErrorCode'] and parameter[2][@type='java.lang.String']]" name="managedName">NativeadTypeListenerErrorEventArgs</attr>
+
+  <!--<remove-node path="/api/package[starts-with(@name, 'com.smaato.soma.nativead')]"/>-->
+  <!--<remove-node path="/api/package[@name='com.smaato.soma.nativead']/interface[@name='NativeAd.NativeAdTypeListener']"/>
+  <remove-node path="/api/package[@name='com.smaato.soma.nativead']/interface[@name='NativeAd.NativeAdListener']"/>-->
+  <remove-node path="/api/package[starts-with(@name, 'com.smaato.soma.toaster')]"/>
+  <remove-node path="/api/package[starts-with(@name, 'com.smaato.soma.internal.utilities')]"/>  
+  <remove-node path="/api/package[starts-with(@name, 'com.smaato.soma.internal.requests.reports')]"/>    
+  <remove-node path="/api/package[@name='com.smaato.soma']/interface[@name='BannerViewInterface']"/>
+  <remove-node path="/api/package[@name='com.smaato.soma']/interface[@name='BaseViewInterface']"/>  
+  <remove-node path="/api/package[@name='com.smaato.soma.internal.requests']/class[@name='BeaconRequest']"/>  
+  <attr path="/api/package[@name='com.smaato.soma']/interface[@name='StandardPublisherMethods']" name="visibility">public</attr>
+  <remove-node path="/api/package[starts-with(@name, 'com.smaato.soma.video')]"/>
+
+
+  <!--<remove-node path="/api/package[@name='com.smaato.soma.nativead']/interface[@name='NativeAd.NativeAdTypeListener']"/>-->
+  <!--<attr path="/api/package[@name='com.smaato.soma.video']/class[@name='VASTView.OnVideoFinishedPlaying']" name="visibility">public</attr>-->
+  <!--<remove-node path="/api/package[starts-with(@name, 'com.smaato.soma.internal')]"/>-->
+  <!--<remove-node path="/api/package[@name='com.smaato.soma.nativead']/interface[@name='NativeAd.CommonOnClickListener']"/>-->
+  <!--<remove-node path="/api/package[starts-with(@name, 'com.smaato.soma.internal.utilities')]"/>-->
+  <!--<remove-node path="/api/package[@name='com.smaato.soma']/interface[@name='StandardPublisherMethods']"/>-->
+  <!--<remove-node path="/api/package[@name='com.smaato.soma.video']/class[@name='VASTView']"/>
+  <remove-node path="/api/package[@name='com.smaato.soma.video']/class[@name='VASTAdActivity']"/>-->
+  
+  
+</metadata>
